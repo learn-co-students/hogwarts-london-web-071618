@@ -138,3 +138,13 @@ ul {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.hide {
+  text-align: right
+}
+
+.reset-button {
+  background: red;
+  color: white;
+  border-radius: 5px;  
+}
