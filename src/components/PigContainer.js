@@ -12,9 +12,16 @@ export default class PigContainer extends Component {
 
     filterPigs = () => {
         const greasedPigs = this.state.pigs.filter(pig => pig.greased === true)
-        this.setState({
-            pigs: greasedPigs
-        })
+        this.state.pigs === greasedPigs ? (
+            this.setState({
+                pigs: this.props.pigData
+            })
+        ) : (
+            this.setState({
+                pigs: greasedPigs
+            })
+        )
+
     }
 
     sortPigs = () => {
